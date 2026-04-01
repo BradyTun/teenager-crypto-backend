@@ -55,5 +55,6 @@ jobs:
             pip install -r requirements.txt
             python manage.py migrate
             python manage.py collectstatic --noinput
-            sudo systemctl restart gunicorn
+            sudo pkill gunicorn || true
+            gunicorn --bind 0.0.0.0:8000 binance_trade.wsgi:application --daemon
             sudo systemctl restart nginx
