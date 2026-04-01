@@ -46,8 +46,8 @@ urlpatterns = [
 
 ]
 
-admin.site.site_header = "Binance Trading Admin"
-admin.site.site_title = "Binance Trading  Admin"
-admin.site.index_title = "Welcome to Binance Trading Admin Panel"
+admin.site.site_header = "Trading Admin"
+admin.site.site_title = "Trading  Admin"
+admin.site.index_title = "Welcome to Trading Admin Panel"
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
