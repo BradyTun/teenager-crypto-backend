@@ -31,8 +31,18 @@ SECRET_KEY = os.environ.get("SECRET")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if os.getenv("ENVIRONMENT") == "development" else False
 
-ALLOWED_HOSTS = ["binance-trade.up.railway.app", "localhost", '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ["https://binance-trade.up.railway.app", "http://localhost"]
+ALLOWED_HOSTS = [
+    "binance-trade.up.railway.app",
+    "localhost",
+    "127.0.0.1",
+    "teenager.thespot.solutions",
+    "163.245.217.246"
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://binance-trade.up.railway.app",
+    "http://localhost",
+    "https://teenager.thespot.solutions"
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
