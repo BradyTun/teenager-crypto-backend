@@ -40,7 +40,6 @@ jobs:
           port: 22
           source: .
           target: ${{ secrets.VPS_TARGET_DIR }}
-          rm: true
 
       - name: Run remote deploy script
         uses: appleboy/ssh-action@v1.0.3
