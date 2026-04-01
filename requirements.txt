@@ -17,3 +17,4 @@ django-nested-admin
 boto3
 django-storages
 firebase-admin
+setuptools==65.5.0
